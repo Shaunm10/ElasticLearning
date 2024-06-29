@@ -18,8 +18,5 @@ P: a123456
 ### Adding products-bulk.json
 
 ```
-> cURL -XPUT  http://localhost:9200/products/_bulk  -H "Content-Type: application/x-ndjson" --data-binary "@products-bulk.json"
+> cURL -XPOST  https://localhost:9200/products/_bulk  -H "Content-Type: application/x-ndjson" -u elastic:a123456 --insecure --data-binary "@products-bulk.json"
 ```
-
-a test?
-https://www.instaclustr.com/support/documentation/elasticsearch/using-elasticsearch/connecting-to-elasticsearch-using-curl/
