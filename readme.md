@@ -6,8 +6,11 @@ Navigate to the docker directory.
 
 > docker compose up -d
 
-goto : 
+Kibana : 
 [http://localhost:5601/](http://localhost:5601/)
+
+Elastic Api:
+[https://localhost:9200/](https://localhost:9200/)
 
 ### Login:
 
