@@ -6,7 +6,7 @@ Navigate to the docker directory.
 
 > docker compose up -d
 
-Kibana : 
+Kibana :
 [http://localhost:5601/](http://localhost:5601/)
 
 Elastic Api:
@@ -22,4 +22,10 @@ P: a123456
 
 ```
 > cURL -XPOST  https://localhost:9200/products/_bulk  -H "Content-Type: application/x-ndjson" -u elastic:a123456 --insecure --data-binary "@products-bulk.json"
+```
+
+### Adding account.json
+
+```
+> cURL -XPOST  https://localhost:9200/accounts/_bulk  -H "Content-Type: application/x-ndjson" -u elastic:a123456 --insecure --data-binary "@accounts.json"
 ```
