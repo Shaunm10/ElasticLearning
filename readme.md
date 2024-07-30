@@ -35,3 +35,9 @@ P: a123456
 ```
 > cURL -XPOST  https://localhost:9200/recipe/_bulk  -H "Content-Type: application/x-ndjson" -u elastic:a123456 --insecure --data-binary "@recipe.json"
 ```
+
+### Adding orders-bulk.json
+
+```
+> cURL -XPOST  https://localhost:9200/order/_bulk  -H "Content-Type: application/x-ndjson" -u elastic:a123456 --insecure --data-binary "@orders-bulk.json"
+```
